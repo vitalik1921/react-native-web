@@ -1,13 +1,11 @@
-# React Native Web with TypeScript
+## Todos:
+* Implement GitHub authorization using - https://github.com/fullstackreact/react-native-oauth
+* Configure and use UI kit, like - native-base-web
+* Cover everything by tests.
 
-![image](https://i.imgur.com/sa5z3DR.gif)
-
-## install
+### install
 
 ```sh
-npm i -g yarn
-git clone git@github.com:ethanneff/react-native-web-typescript.git
-cd react-native-web-typescript
 yarn install
 ```
 

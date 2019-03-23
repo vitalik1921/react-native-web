@@ -10,7 +10,7 @@ import {
 const initialState: SearchState = {
     searchQuery: '',
     pageNumber: 1,
-    rowsNumber: 10,
+    rowsNumber: 5,
     items: [],
 }
 
