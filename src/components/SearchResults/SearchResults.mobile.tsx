@@ -3,6 +3,13 @@ import { FlatList, View, Button, StyleSheet } from "react-native";
 import { SearchState } from '../../types/actions/search';
 import SearchRow from "./components/SearchRow";
 
+// There is may copypasted code from the mobile
+// But this is sort of simulation - where we use 
+// 2 different components for different platforms
+// but now the difference between this components
+// is so small tha we could use 1 component
+// for both platforms
+
 type Props = {
   search: SearchState
   setPage: Function
