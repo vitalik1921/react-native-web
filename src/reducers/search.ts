@@ -19,13 +19,17 @@ export default function searchReducer(
     action: SearchActionTypes): SearchState {
     switch (action.type) {
         case GITHUB_SEARCH_REQUEST:
-        return { ...state, searchQuery: action.payload};
+            return { ...state, searchQuery: action.payload };
         case GITHUB_SEARCH_RESPONSE:
-            return { ...state, items: action.payload.items};
+            return { ...state, items: action.payload.items };
         case GITHUB_SET_PAGE:
-            return { ...state, pageNumber: action.payload};
+            return { ...state, pageNumber: action.payload };
         case GITHUB_SET_ROWS_NUMBER:
-            return { ...state, rowsNumber: action.payload};
+            const pageNumber =
+                (state.pageNumber - 1) * action.payload < state.items.length
+                    ? state.pageNumber
+                    : 1;
+            return { ...state, rowsNumber: action.payload, pageNumber };
         default:
             return state
     }
