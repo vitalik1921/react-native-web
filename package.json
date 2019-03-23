@@ -1,0 +1,74 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "web": "react-scripts start",
+    "build": "react-scripts build",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "test": "jest --coverage",
+    "watch": "jest --watch",
+    "lint": "tsc && tslint --fix -p tsconfig.json -c tslint.json",
+    "reset": "watchman watch-del-all; rm -rf /tmp/metro-bundler-cache-*; rm -rf ./android/build; rm -rf ./android/.gradle; rm -rf ./android/app/build; rm -rf ~/Library/Developer/Xcode/DerivedData; rm -rf /tmp/haste-map-react-native-packager-*; rm -rf ./ios/build; yarn install; pod install --project-directory=ios; react-native start --reset-cache"
+  },
+  "dependencies": {
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-native": "0.59.1",
+    "react-native-web": "0.11.1",
+    "react-redux": "^6.0.1",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-saga": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.11",
+    "@types/react": "^16.8.8",
+    "@types/react-native": "0.57.40",
+    "@types/react-redux": "^7.0.5",
+    "@types/react-test-renderer": "16.8.1",
+    "@types/redux-logger": "^3.0.7",
+    "@types/redux-persist": "^4.3.1",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "prettier": "1.16.4",
+    "react-art": "16.8.4",
+    "react-test-renderer": "16.8.4",
+    "ts-jest": "24.0.0",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "3.3.3333"
+  },
+  "babel": {
+    "presets": [
+      "module:metro-react-native-babel-preset"
+    ]
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.(jsx?)$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|react-router-native)/"
+    ],
+    "globals": {
+      "window": true,
+      "ts-jest": {
+        "tsConfig": "./tsconfig.jest.json"
+      }
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
