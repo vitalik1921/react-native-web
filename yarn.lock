@@ -9492,6 +9492,11 @@ react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.2, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
   integrity sha512-PVadd+WaUDOAciICm/J1waJaSvgq+4rHE/K70j0PFqKhkTBsPv/82UGQJNXAngz1fOQLLxI6z1sEDmJDQhCTAA==
 
+react-native-table-component@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-table-component/-/react-native-table-component-1.2.0.tgz#d4dff88abb58648086ba52a801ba9a1ab1825c03"
+  integrity sha512-j9AEryfGSStJ9vbcfj63uaMxL8Ek+Xn0+rIA4o2Dvovo7C9fAGMEJxJiL57jmNIX65jRtWNwko9GqeaXXzjJVw==
+
 react-native-web@0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.11.1.tgz#a70c8358e36f38a563a709f267c8f153ee7dc435"
